@@ -14,7 +14,7 @@ fn main() {
         "Your command here with {}, please checkout exercises/tests/build.rs",
         timestamp
     );
-    // println!("cargo:{}", your_command);
+    // println!("cargo:{}", your_command); // 导致error: invalid output in build script
     println!("cargo::rustc-env=TEST_FOO={}", timestamp);
     // println!("cargo:TEST_FOO={}", timestamp);
 
